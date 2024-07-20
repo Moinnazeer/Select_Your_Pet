@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Your Pet</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            justify-content: center;
+        }
+        .static-top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: 1rem 0;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for separation */
+        }
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+        .form-control {
+            margin: 0 auto;
+            max-width: 200px;
+        }
+        #petImg {
+            max-width: 100%;
+            max-height: 300px;
+            border-radius: 10px; /* Slightly curved border */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a subtle effect */
+        }
+        h1 {
+            margin-bottom: 1rem;
+        }
+        .image-container {
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="static-top">
+        <h1>Select your Pet</h1>
+        <select id="petSelect" class="form-control">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="parrot">Parrot</option>
+            <option value="spider">Spider</option>
+            <option value="rabbit">Rabbit</option>
+        </select>
+    </div>
+    <div class="container">
+        <div class="image-container">
+            <img id="petImg" src="https://pngimg.com/uploads/dog/dog_PNG156.png" alt="Pet Image"/>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
